@@ -1,6 +1,7 @@
 pipeline {
     agent any
      tools {
+        jdk 'JDK 19'
         maven 'Maven 3.9.9'  // Nom de l'installation que vous avez configurée
     }
     stages {
