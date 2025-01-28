@@ -1,0 +1,31 @@
+.root {
+    -jewelsea-lined-notepad:
+        linear-gradient(
+            from 0px 0px to 0px 11px,
+            repeat,
+            gainsboro,
+            gainsboro 6.25%,
+            cornsilk 6.25%,
+            cornsilk
+        );
+}
+
+.title {
+    -fx-font-size: 16px;
+}
+
+.text-area {
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 15px;
+}
+
+.text-area .content {
+    -fx-background-color: -jewelsea-lined-notepad;
+}
+
+.text-area:focused .content {
+    -fx-background-color:
+        -fx-control-inner-background,
+        -fx-faint-focus-color,
+        -jewelsea-lined-notepad;
+}
