@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Construire') {
             steps {
-                sh 'mvn clean install assembly:single DskipTests'
+                sh 'mvn clean install assembly:single -DskipTests'
             }
         }
         stage('Créer l’image Docker') {
