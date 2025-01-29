@@ -1,8 +1,5 @@
 pipeline {
     agent any
-      environment {
-        JAVA_HOME = 'C:\Program Files\Java\jdk-19'
-    }
      tools {
         jdk 'JDK 19'
         maven 'Maven 3.9.9'  // Nom de l'installation que vous avez configurée
