@@ -13,7 +13,8 @@ pipeline {
         }
         stage('Construire') {
             steps {
-                sh 'mvn clean install assembly:single -DskipTests'
+                sh 'java -version'  // To check the Java version being used
+                sh 'mvn clean install'  // Run Maven build
             }
         }
         stage('Créer l’image Docker') {
